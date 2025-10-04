@@ -1,0 +1,159 @@
+#LOGIN{
+    background: rgb(248, 197, 109);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#form{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#login{
+    border: 2px dashed #333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    background: white;
+    box-shadow: 5px 5px 5px rgb(122, 122, 122);
+    text-align: center;
+    
+}
+
+#login h2{
+    margin-bottom: 20px;
+}
+
+#login input{
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    border: solid rgb(101, 100, 100);
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+#login button{
+    background: rgb(203, 201, 201);
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    float: right;
+}
+
+#login button:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+#DASHBOARD{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header{
+    background: rgb(248, 197, 109);
+    position: sticky; top: 0; z-index: 50;
+}
+
+.container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 24px;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: bo;
+}
+
+#nav-items{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-items a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#nav-items a:hover{
+    color: rgb(158, 75, 75);
+}
+
+.main{
+    margin: 25px;
+    color: rgb(158, 75, 75)
+}
+
+.home-intro{
+    position: relative;
+    height: 300px;
+    border: 2px solid rgb(158, 75, 75);
+    border-radius: 10px;
+    overflow: hidden;
+    background: url('Background\ Images\ _\ Wallpaper\ Photo\ _\ Template\ Vectors\ _\ iPhone\ screensaver\ 589.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.intro{
+    position:absolute;
+    top: 35%;
+    left: 20px;
+    color: whitesmoke;
+}
+
+.intro h3{
+    margin: 0 0 5px;
+    font-size: 30px;
+    color: rgb(241, 143, 95);
+}
+
+.intro span{
+    color: rgb(158, 75, 75);
+    font-weight: bold;
+}
+
+.intro p{
+    margin: 0;
+    font-size: 15px;
+    color: rgb(241, 143, 95);
+    font-weight: bold;
+}
+
+
+.gambar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+    justify-items: center;
+}
+
+.card img{
+    display: block;
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(122, 122, 122);
+}
+
+.card p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px){
+  .gambar{ grid-template-columns: repeat(2, 1fr); }  /* maksimal 2 per baris */
+}
+
